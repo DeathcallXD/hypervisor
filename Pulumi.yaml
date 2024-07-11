@@ -1,0 +1,11 @@
+name: hypervisor
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: /path/to/virtualenv/Users/omsinha/anaconda3/envs/mewt-v3 # path to venv
+description: hypervisor setup
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-python
