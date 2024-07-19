@@ -34,4 +34,4 @@ async def create_deployment(
     request_body: DeploymentCreateRequest, 
     session: AsyncSession = Depends(get_async_session)
 ):
-    ...
+    return await DeploymentService(session).create_deployment(request_body)
